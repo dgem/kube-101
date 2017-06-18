@@ -1,6 +1,6 @@
 
 all = .build .tag .push
-project = kube-102
+project = kube-101
 app = kube-101-app
 
 default: $(all)
