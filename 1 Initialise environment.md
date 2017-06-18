@@ -29,6 +29,7 @@ Would you like to create one? (Y/n)?  Y
 Enter a Project ID. Note that a Project ID CANNOT be changed later.
 Project IDs must be 6-30 characters (lowercase ASCII, digits, or
 hyphens) in length and start with a lowercase letter. kube-101
+```
 
 # Enable Google APIs
 1. Goto https://console.developers.google.com/project/kube-101/settings and enable billing for the project
