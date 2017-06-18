@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1 # for versions before 1.6.0 use extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kube-101
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: kube-101
+    spec:
+      containers:
+      - name: kube-101
+        image: eu.gcr.io/kube-102/kube-101-app
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /alive
+            port: 8080
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
