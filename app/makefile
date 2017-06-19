@@ -7,10 +7,10 @@ default: $(all)
 	@echo finished
 
 .build:
-	docker build -t kube-101 .
+	docker build -t ${project} .
 
 .tag:
-	docker tag kube-101 eu.gcr.io/${project}/${app}
+	docker tag ${project} eu.gcr.io/${project}/${app}
 
 .push:
 	gcloud docker -- push eu.gcr.io/${project}/${app}

@@ -13,7 +13,7 @@ You can install the Cloud SDK from: https://cloud.google.com/sdk/docs/quickstart
 
 Alternatively install using homebrew:
 ```
-brew cask reinstall google-cloud-sdk
+brew cask install google-cloud-sdk
 ```
 
 
