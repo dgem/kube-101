@@ -15,5 +15,14 @@ If running locally you will need `kubectl` in order to be able to manage the env
 brew install kubernetes-cli
 ```
 
+## Docker Configuration
+Becuase our certificate is self signed, you need to setup an insecure registry:
+![Docker Preferences][dockerpref]
+
+
+
 ## VMWare / VirtualBox
 You will also need VirtualBox or VMWare to allow Minikube to create a Virtual Machine.
+
+
+[dockerpref]: DockerPrefs.png "Docker Preferences"
