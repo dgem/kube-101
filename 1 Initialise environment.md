@@ -1,6 +1,6 @@
 # Creating your environment
 ```
-minikube start
+minikube start --insecure-registry=docker.yakov.io:5000
 ```
 
 The above command will spin up a local kubernetes environment. This will be the output.

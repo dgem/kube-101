@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: kube-101
-        image: eu.gcr.io/kube-101/kube-101-app
+        image: docker.yakov.io:5000/kube-101/kube-101-app
         ports:
         - containerPort: 8080
         livenessProbe:

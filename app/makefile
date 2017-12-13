@@ -10,7 +10,7 @@ default: $(all)
 	docker build -t ${project} .
 
 .tag:
-	docker tag ${project} eu.gcr.io/${project}/${app}
+	docker tag ${project} docker.yakov.io:5000/${project}/${app}
 
 .push:
-	gcloud docker -- push eu.gcr.io/${project}/${app}
+	docker push docker.yakov.io:5000/${project}/${app}
