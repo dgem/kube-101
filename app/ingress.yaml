@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kube-101-service
+spec:
+  rules:
+  - host: kubeapp.local
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: kube-101-service
+          servicePort: 8080
