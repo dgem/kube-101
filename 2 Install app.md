@@ -1,4 +1,4 @@
-# Installing a simple node
+# Installing a simple node app
 
 
 ## Deployment
@@ -10,8 +10,4 @@ Your app is now deployed, use `kubectl proxy` again to access the Kubernetes UI 
 
 _**Note** At this point in time the app won't be available on the internet_
 
-## Exposing the app
-
-* run `kubectl apply -f service.yaml`
-
-Again, fire up `kubectl proxy` and navigate to the service. Once it's created you should see an external IP address. You can then then call the /ready probe and should get an `OK` response.
+Use the Kubernetes UI / Dashboard to see what's been deploy and check the logs of the app, you should see something similar to:

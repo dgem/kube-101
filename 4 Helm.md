@@ -1,6 +1,6 @@
 # Helm
 
-Helm can be used to easily deplopy complex services on Kubernetes.
+Helm can be used to easily deploy complex services on Kubernetes.
 
 You can either download from the [repositor](https://github.com/kubernetes/helm/releases)
 
