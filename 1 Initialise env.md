@@ -10,6 +10,11 @@ If you are using VMWare then you'll need to specify an additional parameter:
 minikube start --insecure-registry=docker.yakov.io:5000 --vm-driver vmwarefusion
 ```
 
+If you are using [Hyperkit](https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#hyperkit-driver) then you'll need to specify an additional parameter:
+```
+minikube start --insecure-registry=docker.yakov.io:5000 --vm-driver hyperkit
+```
+
 The above command will spin up a local kubernetes environment. This will be the output.
 
 ```
